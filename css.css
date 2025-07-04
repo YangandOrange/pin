@@ -1,0 +1,29 @@
+@layer utilities {
+    .content-auto {
+        content-visibility: auto;
+    }
+    .text-shadow {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    .text-shadow-lg {
+        text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+    }
+    .bg-blur {
+        backdrop-filter: blur(8px);
+    }
+    .btn-minecraft {
+        @apply bg-primary hover:bg-primary/80 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary/50 shadow-lg;
+    }
+    .server-status-card {
+        @apply bg-dark/80 backdrop-blur-lg rounded-xl p-6 shadow-2xl border border-primary/20 transition-all duration-300 hover:border-primary/40;
+    }
+    .feature-card {
+        @apply bg-dark/60 backdrop-blur-md rounded-xl p-6 shadow-lg border border-white/10 transition-all duration-300 hover:bg-dark/80 hover:scale-105 hover:border-primary/30;
+    }
+    .nav-link {
+        @apply text-white hover:text-primary transition-colors duration-300 font-medium;
+    }
+    .section-title {
+        @apply text-[clamp(2rem,5vw,3.5rem)] font-bold text-white text-shadow-lg mb-8 text-center;
+    }
+}    
